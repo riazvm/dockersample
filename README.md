@@ -1,4 +1,4 @@
-# dockersample
+# dockersample - QRCodeGenerator
 Simple containerized spring boot application that generates a QRCode
 
 Step 1. Start coding and create your initial application or service baseline 
