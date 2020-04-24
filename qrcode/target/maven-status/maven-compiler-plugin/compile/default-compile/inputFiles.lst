@@ -1,6 +1,6 @@
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/App.java
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/SpringQRCodeGeneratorApp.java
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/service/impl/QRImageServiceImpl.java
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/controller/SpringMerchantApp.java
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/model/Merchant.java
-/Users/riazm/Documents/workspaces/eclipse/qrcode/src/main/java/com/docker/sample/qrcode/service/QRImageService.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/model/Merchant.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/controller/SpringMerchantApp.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/service/impl/QRImageServiceImpl.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/SpringQRCodeGeneratorApp.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/App.java
+/Users/riazm/Documents/sandbox/gitprojects/dockersample/dockersample/qrcode/src/main/java/com/docker/sample/qrcode/service/QRImageService.java
