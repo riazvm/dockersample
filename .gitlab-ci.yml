@@ -1,0 +1,26 @@
+stages:
+  - build
+  - docker-build
+
+maven-build:
+  stage: build
+  image: maven:latest
+  script:
+    - mvn package
+
+docker-package:
+  stage: docker-build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - echo $CI_REGISTRY_CA_CERT
+    - |
+      echo "-----BEGIN CERTIFICATE-----
+      JQeyaennwBkMo0Cam70FWajLlzSr6Smu0zINHnTSANERg4BmOPkGQnnoWIUYG+En
+      oj4XG1koFlFv6uJPfMHNuKQUM1A24Wff+M+YardcIGjlFFTb+w==
+      -----END CERTIFICATE-----" >> /kaniko/ssl/certs/ca-certificates.crt
+    #- echo "${CI_REGISTRY_CA_CERT}" > /kaniko/ssl/certs/ca-certificates.crt
+    - echo $CI_PROJECT_DIR
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:latest
