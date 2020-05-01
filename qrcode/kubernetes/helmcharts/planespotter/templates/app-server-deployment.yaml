@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Value. appname}}
+  namespace: 
+  labels:
+    app: 
+    tier: 
+spec:
+  replicas: 
+  selector:
+    matchLabels:
+      app: 
+  template:
+    metadata:
+      labels:
+        app: 
+    spec:
+      containers:
+      - name: 
+        image: 
+        imagePullPolicy: 
+        ports:
+        - containerPort: 
+        volumeMounts:
+        - name: 
+          mountPath: 
+      volumes:
+        - name: 
+          configMap:
+            name: 
